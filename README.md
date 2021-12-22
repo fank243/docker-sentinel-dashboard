@@ -2,29 +2,28 @@
 
 alibaba sentinel dashboard
 
-Sentinel：https://github.com/alibaba/Sentinel
+## Sentinel
+
+https://github.com/alibaba/Sentinel
 
 ## 构建步骤
 
-### 构建镜像
+### docker build
 
 ```bash
 docker build -t sentinel-dashboard:1.8.2 .
 ```
 
-### 验证镜像
+### docker run
 
 ```bash
 # 验证
 docker run --name sentinel-dashboard -it sentinel-dashboard:1.8.2 sh
 
 java -version
-
-# +0800 时区验证
-date -R
 ```
 
-### 推送镜像到hub.docker.com
+### docker push
 
 ```bash
 docker login
@@ -36,9 +35,7 @@ docker tag sentinel-dashboard:1.8.2 fank243/sentinel-dashboard:1.8.2
 docker push fank243/sentinel-dashboard:1.8.2
 ```
 
-## 使用
-
-docker-compose
+## docker-compose
 
 ```yaml
 version: '3.7'
