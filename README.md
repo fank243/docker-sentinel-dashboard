@@ -40,7 +40,7 @@ docker push fank243/sentinel-dashboard:1.8.2
 
 docker-compose
 
-```bash
+```yaml
 version: '3.7'
 services:
   sentinel:
