@@ -19,8 +19,6 @@ docker build -t sentinel-dashboard:1.8.2 .
 ```bash
 # 验证
 docker run --name sentinel-dashboard -it sentinel-dashboard:1.8.2 sh
-
-java -version
 ```
 
 ### docker push
