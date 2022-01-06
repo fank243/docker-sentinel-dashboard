@@ -11,14 +11,14 @@ https://github.com/alibaba/Sentinel
 ### docker build
 
 ```bash
-docker build -t sentinel-dashboard:1.8.2 .
+docker build -t sentinel-dashboard:${version} .
 ```
 
 ### docker run
 
 ```bash
 # 验证
-docker run --name sentinel-dashboard -it sentinel-dashboard:1.8.2 sh
+docker run --name sentinel-dashboard -it sentinel-dashboard:${version} sh
 ```
 
 ### docker push
@@ -27,10 +27,10 @@ docker run --name sentinel-dashboard -it sentinel-dashboard:1.8.2 sh
 docker login
 
 # tag 
-docker tag sentinel-dashboard:1.8.2 fank243/sentinel-dashboard:1.8.2
+docker tag sentinel-dashboard:${version} fank243/sentinel-dashboard:${version}
 
 # push
-docker push fank243/sentinel-dashboard:1.8.2
+docker push fank243/sentinel-dashboard:${version}
 ```
 
 ## docker-compose
@@ -39,7 +39,7 @@ docker push fank243/sentinel-dashboard:1.8.2
 version: '3.7'
 services:
   sentinel:
-    image: fank243/sentinel-dashboard:1.8.2
+    image: fank243/sentinel-dashboard:${version}
     hostname: sentinel
     container_name: sentinel
     restart: unless-stopped
