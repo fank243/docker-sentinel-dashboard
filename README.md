@@ -4,7 +4,7 @@ alibaba sentinel dashboard
 
 ## Sentinel
 
-https://github.com/alibaba/Sentinel
+<https://github.com/alibaba/Sentinel>
 
 ## 构建步骤
 
