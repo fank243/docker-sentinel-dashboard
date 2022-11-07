@@ -2,7 +2,7 @@ FROM fank243/dragonwell:1.8.0_312
 
 WORKDIR /app
 
-COPY sentinel-dashboard-1.8.4.jar app.jar
+COPY sentinel-dashboard-1.8.6.jar app.jar
 
 RUN chmod -R +x app.jar
 
